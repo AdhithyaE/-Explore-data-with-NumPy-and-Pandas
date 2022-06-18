@@ -11,3 +11,25 @@ plt.bar(x=df_students.Name, height=df_students.Grade)
 
 # Display the plot
 plt.show()
+
+Note that you used the pyplot class from Matplotlib to plot the chart. 
+This class provides a whole bunch of ways to improve the visual elements of the plot.
+For example, the following code:
+
+Specifies the color of the bar chart.
+Adds a title to the chart (so we know what it represents)
+Adds labels to the X and Y (so we know which axis shows which data)
+Adds a grid (to make it easier to determine the values for the bars)
+Rotates the X markers (so we can read them)
+# Create a bar plot of name vs grade
+plt.bar(x=df_students.Name, height=df_students.Grade, color='orange')
+
+# Customize the chart
+plt.title('Student Grades')
+plt.xlabel('Student')
+plt.ylabel('Grade')
+plt.grid(color='#95a5a6', linestyle='--', linewidth=2, axis='y', alpha=0.7)
+plt.xticks(rotation=90)
+
+# Display the plot
+plt.show()
