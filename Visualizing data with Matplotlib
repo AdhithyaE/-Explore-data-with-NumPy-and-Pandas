@@ -1,0 +1,13 @@
+# DataFrames provide a great way to explore and analyze tabular data, but sometimes a picture is worth a thousand rows and columns. 
+#The Matplotlib library provides the foundation for plotting data visualizations that can greatly enhance your ability the analyze the data.
+
+# Ensure plots are displayed inline in the notebook
+%matplotlib inline
+
+from matplotlib import pyplot as plt
+
+# Create a bar plot of name vs grade
+plt.bar(x=df_students.Name, height=df_students.Grade)
+
+# Display the plot
+plt.show()
